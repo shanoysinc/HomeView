@@ -14,18 +14,20 @@
 		height: 65%;
 	}
 	&__product-1 {
-		background-color: yellowgreen;
 		height: 35%;
 		width: 30%;
 	}
 	&__about {
-		background-color: blueviolet;
 		height: 35%;
 		width: 40%;
 	}
 	&__product-2 {
-		background-color: yellowgreen;
 		height: 35%;
 		width: 30%;
 	}
+}
+
+.product-image {
+	height: 100%;
+	width: 100%;
 }

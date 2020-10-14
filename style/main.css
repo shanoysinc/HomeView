@@ -37,21 +37,23 @@ body {
 }
 
 .content__product-1 {
-  background-color: yellowgreen;
   height: 35%;
   width: 30%;
 }
 
 .content__about {
-  background-color: blueviolet;
   height: 35%;
   width: 40%;
 }
 
 .content__product-2 {
-  background-color: yellowgreen;
   height: 35%;
   width: 30%;
+}
+
+.product-image {
+  height: 100%;
+  width: 100%;
 }
 
 .logo {
@@ -88,7 +90,7 @@ body {
 .main-details {
   margin: 0 auto;
   margin-top: 8rem;
-  width: 70%;
+  width: 68%;
 }
 
 .main-details__title {
@@ -115,4 +117,23 @@ body {
 
 .search__icon {
   fill: aqua;
+}
+
+.section-about {
+  margin: 0 auto;
+  margin-top: 6rem;
+  width: 68%;
+}
+
+.section-about__title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  line-height: normal;
+  color: #454545;
+  letter-spacing: 0.6rem;
+}
+
+.section-about__paragraph {
+  font-size: 1rem;
+  color: #a1a1a1;
 }
