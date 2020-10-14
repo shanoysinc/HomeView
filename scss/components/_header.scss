@@ -1,0 +1,21 @@
+.logo {
+	font-size: 2rem;
+	padding-right: 5rem;
+	margin-top: -5rem;
+	font-weight: 700;
+}
+.nav-bar {
+	display: flex;
+	align-items: center;
+	margin-left: 2rem;
+	margin-top: 4rem;
+	&__items {
+		list-style: none;
+		font-size: 1.3rem;
+		flex: 0 0 10%;
+	}
+	&__link {
+		text-decoration: none;
+		color: $color-white;
+	}
+}

@@ -1,6 +1,17 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Spartan", sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.7;
 }
 
 .content {
@@ -14,14 +25,14 @@ body {
 }
 
 .content__header {
-  background-color: orangered;
-  width: 60%;
+  background-image: url("/images/desktop-image-hero-1.jpg");
+  background-size: 100% 100%;
+  width: 50%;
   height: 65%;
 }
 
 .content__main {
-  background-color: goldenrod;
-  width: 40%;
+  width: 50%;
   height: 65%;
 }
 
@@ -41,4 +52,67 @@ body {
   background-color: yellowgreen;
   height: 35%;
   width: 30%;
+}
+
+.logo {
+  font-size: 2rem;
+  padding-right: 5rem;
+  margin-top: -5rem;
+  font-weight: 700;
+}
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2rem;
+  margin-top: 4rem;
+}
+
+.nav-bar__items {
+  list-style: none;
+  font-size: 1.3rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+}
+
+.nav-bar__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-details {
+  margin: 0 auto;
+  margin-top: 8rem;
+  width: 70%;
+}
+
+.main-details__title {
+  font-size: 3.3rem;
+  line-height: normal;
+  color: #454545;
+}
+
+.main-details__paragraph {
+  font-size: 1.2rem;
+  color: #a1a1a1;
+}
+
+.btn {
+  outline: none;
+  font-size: 1.6rem;
+  border: none;
+  margin-top: 2rem;
+  letter-spacing: 1.1rem;
+  background: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.search__icon {
+  fill: aqua;
 }
