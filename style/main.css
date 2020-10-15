@@ -14,6 +14,13 @@ body {
   line-height: 1.7;
 }
 
+#carousel__images {
+  background-image: url("/images/desktop-image-hero-1.jpg");
+  background-size: 100% 100%;
+  width: 50%;
+  height: 65%;
+}
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,13 +29,6 @@ body {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.content__header {
-  background-image: url("/images/desktop-image-hero-1.jpg");
-  background-size: 100% 100%;
-  width: 50%;
-  height: 65%;
 }
 
 .content__main {
@@ -129,12 +129,12 @@ body {
   position: absolute;
 }
 
-.carousel__left {
+.carousel__btn--left {
   right: -5.4rem;
   top: 27.6rem;
 }
 
-.carousel__right {
+.carousel__btn--right {
   right: -10rem;
   top: 27.6rem;
 }
