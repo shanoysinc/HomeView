@@ -2,14 +2,17 @@
 	margin: 0 auto;
 	margin-top: $margin-top-large;
 	width: $content-width;
+	// transition: all 1s;
 	&__title {
 		font-size: 3.3rem;
 		line-height: normal;
 		color: $dark-gray-2;
+		animation: moveInLeft 1s ease-in-out;
 	}
 
 	&__paragraph {
 		font-size: 1.2rem;
+		animation: moveInRight 1s ease-in-out;
 		color: $dark-gray-1;
 	}
 }

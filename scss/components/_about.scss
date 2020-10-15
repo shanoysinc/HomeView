@@ -8,10 +8,12 @@
 		line-height: normal;
 		color: $dark-gray-2;
 		letter-spacing: 0.6rem;
+		animation: moveInLeft 1s ease-in-out;
 	}
 
 	&__paragraph {
 		font-size: 1.08rem;
 		color: $dark-gray-1;
+		animation: moveInRight 1s ease-in-out;
 	}
 }

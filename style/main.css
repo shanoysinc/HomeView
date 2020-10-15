@@ -12,6 +12,59 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.7;
+  overflow-x: hidden;
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-12rem);
+            transform: translateX(-12rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-12rem);
+            transform: translateX(-12rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(12rem);
+            transform: translateX(12rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(12rem);
+            transform: translateX(12rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 #carousel__images {
@@ -19,6 +72,8 @@ body {
   background-size: 100% 100%;
   width: 50%;
   height: 65%;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 .content {
@@ -97,10 +152,14 @@ body {
   font-size: 3.3rem;
   line-height: normal;
   color: #454545;
+  -webkit-animation: moveInLeft 1s ease-in-out;
+          animation: moveInLeft 1s ease-in-out;
 }
 
 .main-details__paragraph {
   font-size: 1.2rem;
+  -webkit-animation: moveInRight 1s ease-in-out;
+          animation: moveInRight 1s ease-in-out;
   color: #a1a1a1;
 }
 
@@ -113,6 +172,18 @@ body {
   background: none;
   cursor: pointer;
   text-transform: uppercase;
+  -webkit-animation: moveInRight 1s ease-in-out;
+          animation: moveInRight 1s ease-in-out;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.btn:hover {
+  -webkit-transform: translateX(1.2rem);
+          transform: translateX(1.2rem);
 }
 
 .carousel {
@@ -151,9 +222,13 @@ body {
   line-height: normal;
   color: #454545;
   letter-spacing: 0.6rem;
+  -webkit-animation: moveInLeft 1s ease-in-out;
+          animation: moveInLeft 1s ease-in-out;
 }
 
 .section-about__paragraph {
   font-size: 1.08rem;
   color: #a1a1a1;
+  -webkit-animation: moveInRight 1s ease-in-out;
+          animation: moveInRight 1s ease-in-out;
 }

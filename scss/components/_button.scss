@@ -7,6 +7,16 @@
 	background: none;
 	cursor: pointer;
 	text-transform: uppercase;
+	animation: moveInRight 1s ease-in-out;
+	padding: 1rem;
+	transition: transform 0.3s;
+	&:hover {
+		transform: translateX(1.2rem);
+	}
+
+	// &__arrow {
+	// 	fill: currentColor;
+	// }
 }
 
 // .search__icon {
