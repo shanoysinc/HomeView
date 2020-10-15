@@ -9,6 +9,28 @@
 	text-transform: uppercase;
 }
 
-.search__icon {
-	fill: aqua;
+// .search__icon {
+// 	fill: aqua;
+// }
+
+.carousel {
+	position: relative;
+	&__btn {
+		background-color: black;
+		padding: 2rem;
+		cursor: pointer;
+		outline: none;
+		border: none;
+		position: relative;
+		position: absolute;
+	}
+	&__left {
+		right: -5.4rem;
+		top: 27.6rem;
+	}
+
+	&__right {
+		right: -10rem;
+		top: 27.6rem;
+	}
 }
