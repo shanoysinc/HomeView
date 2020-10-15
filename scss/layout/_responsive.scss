@@ -1,0 +1,124 @@
+@media screen and (max-width: 1084px) {
+	#carousel__images {
+		width: 100vw;
+		height: 70vh;
+	}
+
+	.content {
+		display: grid;
+		&__main {
+			width: 100vw;
+			height: 65%;
+			margin-bottom: $margin-bottom-mid;
+		}
+		&__product-1 {
+			height: 100%;
+			width: 100vw;
+		}
+		&__about {
+			width: 100vw;
+			height: 65%;
+			margin-bottom: $margin-bottom-mid;
+		}
+		&__product-2 {
+			height: 100%;
+			width: 100vw;
+		}
+	}
+
+	.carousel {
+		&__btn--left {
+			right: 6.9rem;
+			top: 30.8rem;
+		}
+
+		&__btn--right {
+			right: 1.8rem;
+			top: 30.8rem;
+		}
+	}
+	.main-details {
+		&__title {
+			font-size: 3.8rem;
+		}
+
+		&__paragraph {
+			font-size: 1.4rem;
+		}
+	}
+
+	.section-about {
+		&__title {
+			font-size: 1.5rem;
+		}
+
+		&__paragraph {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.main-details {
+		margin: 0 auto;
+		margin-top: $margin-top-large;
+
+		width: $content-width-small;
+		&__title {
+			font-size: 3.3rem;
+		}
+
+		&__paragraph {
+			font-size: 1.4rem;
+		}
+	}
+
+	.section-about {
+		margin: 0 auto;
+		margin-top: $margin-top-large;
+
+		width: $content-width-small;
+		&__title {
+			font-size: 1.5rem;
+		}
+
+		&__paragraph {
+			font-size: 1.4rem;
+		}
+	}
+}
+@media screen and (max-width: 450px) {
+	.main-details {
+		&__title {
+			font-size: 2.4rem;
+		}
+
+		&__paragraph {
+			font-size: 1.2rem;
+		}
+	}
+
+	.section-about {
+		&__title {
+			font-size: 1.5rem;
+		}
+
+		&__paragraph {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.carousel {
+		&__btn--left {
+			right: 5.3rem;
+			top: 41.7rem;
+		}
+
+		&__btn--right {
+			right: 0;
+			top: 41.7rem;
+		}
+	}
+}

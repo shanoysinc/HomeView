@@ -67,50 +67,6 @@ body {
   }
 }
 
-#carousel__images {
-  background-image: url("/images/desktop-image-hero-1.jpg");
-  background-size: 100% 100%;
-  width: 50%;
-  height: 65%;
-  -webkit-transition: all 0.7s;
-  transition: all 0.7s;
-}
-
-.content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.content__main {
-  width: 50%;
-  height: 65%;
-}
-
-.content__product-1 {
-  height: 35%;
-  width: 30%;
-}
-
-.content__about {
-  height: 35%;
-  width: 40%;
-}
-
-.content__product-2 {
-  height: 35%;
-  width: 30%;
-}
-
-.product-image {
-  height: 100%;
-  width: 100%;
-}
-
 .logo {
   font-size: 2rem;
   padding-right: 5rem;
@@ -127,6 +83,8 @@ body {
           align-items: center;
   margin-left: 2rem;
   margin-top: 4rem;
+  -webkit-animation: moveInRight 1s ease-in-out;
+          animation: moveInRight 1s ease-in-out;
 }
 
 .nav-bar__items {
@@ -135,6 +93,13 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 10%;
           flex: 0 0 10%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.nav-bar__items:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .nav-bar__link {
@@ -198,6 +163,8 @@ body {
   border: none;
   position: relative;
   position: absolute;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .carousel__btn--left {
@@ -231,4 +198,148 @@ body {
   color: #a1a1a1;
   -webkit-animation: moveInRight 1s ease-in-out;
           animation: moveInRight 1s ease-in-out;
+}
+
+#carousel__images {
+  background-image: url("/images/desktop-image-hero-1.jpg");
+  background-size: 100% 100%;
+  width: 50%;
+  height: 65%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content__main {
+  width: 50%;
+  height: 65%;
+}
+
+.content__product-1 {
+  height: 35%;
+  width: 30%;
+}
+
+.content__about {
+  height: 35%;
+  width: 40%;
+}
+
+.content__product-2 {
+  height: 35%;
+  width: 30%;
+}
+
+.product-image {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1084px) {
+  #carousel__images {
+    width: 100vw;
+    height: 70vh;
+  }
+  .content {
+    display: -ms-grid;
+    display: grid;
+  }
+  .content__main {
+    width: 100vw;
+    height: 65%;
+    margin-bottom: 6rem;
+  }
+  .content__product-1 {
+    height: 100%;
+    width: 100vw;
+  }
+  .content__about {
+    width: 100vw;
+    height: 65%;
+    margin-bottom: 6rem;
+  }
+  .content__product-2 {
+    height: 100%;
+    width: 100vw;
+  }
+  .carousel__btn--left {
+    right: 6.9rem;
+    top: 30.8rem;
+  }
+  .carousel__btn--right {
+    right: 1.8rem;
+    top: 30.8rem;
+  }
+  .main-details__title {
+    font-size: 3.8rem;
+  }
+  .main-details__paragraph {
+    font-size: 1.4rem;
+  }
+  .section-about__title {
+    font-size: 1.5rem;
+  }
+  .section-about__paragraph {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-details {
+    margin: 0 auto;
+    margin-top: 8rem;
+    width: 80%;
+  }
+  .main-details__title {
+    font-size: 3.3rem;
+  }
+  .main-details__paragraph {
+    font-size: 1.4rem;
+  }
+  .section-about {
+    margin: 0 auto;
+    margin-top: 8rem;
+    width: 80%;
+  }
+  .section-about__title {
+    font-size: 1.5rem;
+  }
+  .section-about__paragraph {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-details__title {
+    font-size: 2.4rem;
+  }
+  .main-details__paragraph {
+    font-size: 1.2rem;
+  }
+  .section-about__title {
+    font-size: 1.5rem;
+  }
+  .section-about__paragraph {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .carousel__btn--left {
+    right: 5.3rem;
+    top: 41.7rem;
+  }
+  .carousel__btn--right {
+    right: 0;
+    top: 41.7rem;
+  }
 }
