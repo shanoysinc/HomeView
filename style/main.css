@@ -295,6 +295,14 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .logo {
+    margin-left: -4rem;
+    padding-right: 2rem;
+  }
+  .nav-bar__items--right {
+    padding-left: 0.5rem;
+    margin-right: 2rem;
+  }
   .main-details {
     margin: 0 auto;
     margin-top: 8rem;
